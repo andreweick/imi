@@ -2,12 +2,17 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://imintel.org/
+title: Institute of Modern Intelligence
+subtitle: "dedicated to developing the science, practice, and governance of modern intelligence."
+author: "Mark Andrew Eick, Founder and CEO"
 simple_search: http://google.com/search
 description:
+  >
+    The Institute for Modern Intelligence is embracing the evolution of the intelligence community
+    from the expanding theoretical foundations, to the innovative techniques, to the implications
+    for organization and management. In short, the IMI is dedicated to developing the science,
+    practice, and governance of modern intelligence.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
