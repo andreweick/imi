@@ -6,7 +6,7 @@ url: http://imintel.org/
 title: Institute of Modern Intelligence
 subtitle: "dedicated to developing the science, practice, and governance of modern intelligence."
 author: "Mark Andrew Eick, Founder and CEO"
-simple_search: http://google.com/search
+# simple_search: http://google.com/search
 description:
   >
     The Institute for Modern Intelligence is embracing the evolution of the intelligence community
@@ -21,7 +21,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
+# subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
