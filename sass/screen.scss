@@ -115,23 +115,16 @@ h2 {
 	margin:4px 0;
 }
 
-#fullNav {
-	width:244px;
-	margin:0 auto;
-}
-
-ul#navList {
+#navList {
 	list-style:none;
 	margin:0;
 	padding:0;
-}
-
-ul#navList li {
-	float:left;
-	margin:10px;
-}
-
-ul#navList li a {
-	color:#FFF;
-	font-size:12px;
+  li {
+  	display: inline;
+  	margin:10px;
+    a {
+      color:#FFF;
+      font-size:12px;
+    }
+  }
 }
