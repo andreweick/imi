@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2012 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-standard.css" rel="stylesheet" />
+*/
+
+@font-face {
+  font-family: "SSStandard";
+  src: url('ss-standard.eot');
+  src: url('ss-standard.eot?#iefix') format('embedded-opentype'),
+       url('ss-standard.woff') format('woff'),
+       url('ss-standard.ttf')  format('truetype'),
+       url('ss-standard.svg#SSStandard') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin ss-icon {
+  font-family: "SSStandard";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  top: 0.15em;
+  margin-left: 0.3em;
+}
+
+@mixin ss-right-cursor                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-cursor                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-crosshair             { &:after  { @include ss-icon; content:'⌖';}}
+@mixin ss-left-crosshair              { &:before { @include ss-icon; content:'⌖';}}
+
+@mixin ss-right-search                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-search                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-zoomin                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-zoomin                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-zoomout               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-zoomout                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-view                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-view                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-attach                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-attach                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-link                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-link                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-move                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-move                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-write                 { &:after  { @include ss-icon; content:'✎';}}
+@mixin ss-left-write                  { &:before { @include ss-icon; content:'✎';}}
+
+@mixin ss-right-writingdisabled       { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-writingdisabled        { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-erase                 { &:after  { @include ss-icon; content:'✐';}}
+@mixin ss-left-erase                  { &:before { @include ss-icon; content:'✐';}}
+
+@mixin ss-right-compose               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-compose                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-lock                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-lock                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-unlock                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-unlock                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-key                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-key                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-backspace             { &:after  { @include ss-icon; content:'⌫';}}
+@mixin ss-left-backspace              { &:before { @include ss-icon; content:'⌫';}}
+
+@mixin ss-right-ban                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-ban                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-trash                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-trash                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-target                { &:after  { @include ss-icon; content:'◎';}}
+@mixin ss-left-target                 { &:before { @include ss-icon; content:'◎';}}
+
+@mixin ss-right-tag                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-tag                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-bookmark              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-bookmark               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-flag                  { &:after  { @include ss-icon; content:'⚑';}}
+@mixin ss-left-flag                   { &:before { @include ss-icon; content:'⚑';}}
+
+@mixin ss-right-like                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-like                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-dislike               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-dislike                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-heart                 { &:after  { @include ss-icon; content:'♥';}}
+@mixin ss-left-heart                  { &:before { @include ss-icon; content:'♥';}}
+
+@mixin ss-right-halfheart             { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-halfheart              { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-star                  { &:after  { @include ss-icon; content:'⋆';}}
+@mixin ss-left-star                   { &:before { @include ss-icon; content:'⋆';}}
+
+@mixin ss-right-halfstar              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-halfstar               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-sample                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-sample                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-crop                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-crop                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-layers                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-layers                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-phone                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-phone                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-phonedisabled         { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-phonedisabled          { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-rss                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-rss                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-facetime              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-facetime               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-reply                 { &:after  { @include ss-icon; content:'↩';}}
+@mixin ss-left-reply                  { &:before { @include ss-icon; content:'↩';}}
+
+@mixin ss-right-send                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-send                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-mail                  { &:after  { @include ss-icon; content:'✉';}}
+@mixin ss-left-mail                   { &:before { @include ss-icon; content:'✉';}}
+
+@mixin ss-right-inbox                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-inbox                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-chat                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-chat                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-user                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-user                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-femaleuser            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-femaleuser             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-users                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-users                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-cart                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-cart                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-creditcard            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-creditcard             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-dollarsign            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-dollarsign             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-barchart              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-barchart               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-piechart              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-piechart               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-box                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-box                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-home                  { &:after  { @include ss-icon; content:'⌂';}}
+@mixin ss-left-home                   { &:before { @include ss-icon; content:'⌂';}}
+
+@mixin ss-right-globe                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-globe                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-navigate              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-navigate               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-compass               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-compass                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-signpost              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-signpost               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-location              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-location               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-map                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-map                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-pin                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-pin                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-database              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-database               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-hdd                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-hdd                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-music                 { &:after  { @include ss-icon; content:'♫';}}
+@mixin ss-left-music                  { &:before { @include ss-icon; content:'♫';}}
+
+@mixin ss-right-mic                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-mic                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-volume                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-volume                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-volumelow             { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-volumelow              { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-volumehigh            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-volumehigh             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-airplay               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-airplay                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-camera                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-camera                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-picture               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-picture                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-video                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-video                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-play                  { &:after  { @include ss-icon; content:'▶';}}
+@mixin ss-left-play                   { &:before { @include ss-icon; content:'▶';}}
+
+@mixin ss-right-pause                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-pause                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-stop                  { &:after  { @include ss-icon; content:'■';}}
+@mixin ss-left-stop                   { &:before { @include ss-icon; content:'■';}}
+
+@mixin ss-right-record                { &:after  { @include ss-icon; content:'●';}}
+@mixin ss-left-record                 { &:before { @include ss-icon; content:'●';}}
+
+@mixin ss-right-rewind                { &:after  { @include ss-icon; content:'⏪';}}
+@mixin ss-left-rewind                 { &:before { @include ss-icon; content:'⏪';}}
+
+@mixin ss-right-fastforward           { &:after  { @include ss-icon; content:'⏩';}}
+@mixin ss-left-fastforward            { &:before { @include ss-icon; content:'⏩';}}
+
+@mixin ss-right-skipback              { &:after  { @include ss-icon; content:'⏮';}}
+@mixin ss-left-skipback               { &:before { @include ss-icon; content:'⏮';}}
+
+@mixin ss-right-skipforward           { &:after  { @include ss-icon; content:'⏭';}}
+@mixin ss-left-skipforward            { &:before { @include ss-icon; content:'⏭';}}
+
+@mixin ss-right-eject                 { &:after  { @include ss-icon; content:'⏏';}}
+@mixin ss-left-eject                  { &:before { @include ss-icon; content:'⏏';}}
+
+@mixin ss-right-repeat                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-repeat                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-replay                { &:after  { @include ss-icon; content:'↺';}}
+@mixin ss-left-replay                 { &:before { @include ss-icon; content:'↺';}}
+
+@mixin ss-right-shuffle               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-shuffle                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-book                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-book                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-openbook              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-openbook               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-notebook              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-notebook               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-grid                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-grid                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-rows                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-rows                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-columns               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-columns                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-thumbnails            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-thumbnails             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-desktop               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-desktop                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-laptop                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-laptop                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-tablet                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-tablet                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-cell                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-cell                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-battery               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-battery                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-batteryhigh           { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-batteryhigh            { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-batterymedium         { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-batterymedium          { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-batterylow            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-batterylow             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-batteryempty          { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-batteryempty           { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-clouddownload         { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-clouddownload          { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-download              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-download               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-cloudupload           { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-cloudupload            { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-upload                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-upload                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-fork                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-fork                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-merge                 { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-merge                  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-refresh               { &:after  { @include ss-icon; content:'↻';}}
+@mixin ss-left-refresh                { &:before { @include ss-icon; content:'↻';}}
+
+@mixin ss-right-sync                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-sync                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-loading               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-loading                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-wifi                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-wifi                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-connection            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-connection             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-file                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-file                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-folder                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-folder                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-quote                 { &:after  { @include ss-icon; content:'“';}}
+@mixin ss-left-quote                  { &:before { @include ss-icon; content:'“';}}
+
+@mixin ss-right-text                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-text                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-font                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-font                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-print                 { &:after  { @include ss-icon; content:'⎙';}}
+@mixin ss-left-print                  { &:before { @include ss-icon; content:'⎙';}}
+
+@mixin ss-right-fax                   { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-fax                    { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-list                  { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-list                   { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-layout                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-layout                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-action                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-action                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-redirect              { &:after  { @include ss-icon; content:'↪';}}
+@mixin ss-left-redirect               { &:before { @include ss-icon; content:'↪';}}
+
+@mixin ss-right-expand                { &:after  { @include ss-icon; content:'⤢';}}
+@mixin ss-left-expand                 { &:before { @include ss-icon; content:'⤢';}}
+
+@mixin ss-right-contract              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-contract               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-help                  { &:after  { @include ss-icon; content:'❓';}}
+@mixin ss-left-help                   { &:before { @include ss-icon; content:'❓';}}
+
+@mixin ss-right-info                  { &:after  { @include ss-icon; content:'ℹ';}}
+@mixin ss-left-info                   { &:before { @include ss-icon; content:'ℹ';}}
+
+@mixin ss-right-alert                 { &:after  { @include ss-icon; content:'⚠';}}
+@mixin ss-left-alert                  { &:before { @include ss-icon; content:'⚠';}}
+
+@mixin ss-right-caution               { &:after  { @include ss-icon; content:'⛔';}}
+@mixin ss-left-caution                { &:before { @include ss-icon; content:'⛔';}}
+
+@mixin ss-right-logout                { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-logout                 { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-plus                  { &:before { @include ss-icon; content:'+';}}
+@mixin ss-left-plus                   { &:before { @include ss-icon; content:'+';}}
+
+@mixin ss-right-hyphen                { &:before { @include ss-icon; content:'-';}}
+@mixin ss-left-hyphen                 { &:before { @include ss-icon; content:'-';}}
+
+@mixin ss-right-check                 { &:after  { @include ss-icon; content:'✓';}}
+@mixin ss-left-check                  { &:before { @include ss-icon; content:'✓';}}
+
+@mixin ss-right-delete                { &:after  { @include ss-icon; content:'␡';}}
+@mixin ss-left-delete                 { &:before { @include ss-icon; content:'␡';}}
+
+@mixin ss-right-settings              { &:after  { @include ss-icon; content:'⚙';}}
+@mixin ss-left-settings               { &:before { @include ss-icon; content:'⚙';}}
+
+@mixin ss-right-dashboard             { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-dashboard              { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-notifications         { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-notifications          { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-notificationsdisabled { &:before { @include ss-icon; content:'';}}
+@mixin ss-left-notificationsdisabled  { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-clock                 { &:after  { @include ss-icon; content:'⏲';}}
+@mixin ss-left-clock                  { &:before { @include ss-icon; content:'⏲';}}
+
+@mixin ss-right-stopwatch             { &:after  { @include ss-icon; content:'⏱';}}
+@mixin ss-left-stopwatch              { &:before { @include ss-icon; content:'⏱';}}
+
+@mixin ss-right-calendar              { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-calendar               { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-calendaradd           { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-calendaradd            { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-calendarremove        { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-calendarremove         { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-calendarcheck         { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-calendarcheck          { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-calendardelete        { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-calendardelete         { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-briefcase             { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-briefcase              { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-cloud                 { &:after  { @include ss-icon; content:'☁';}}
+@mixin ss-left-cloud                  { &:before { @include ss-icon; content:'☁';}}
+
+@mixin ss-right-droplet               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-droplet                { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-navigateup            { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-navigateup             { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-navigateright         { &:after  { @include ss-icon; content:'▻';}}
+@mixin ss-left-navigateright          { &:before { @include ss-icon; content:'▻';}}
+
+@mixin ss-right-navigatedown          { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-navigatedown           { &:before { @include ss-icon; content:'';}}
+
+@mixin ss-right-navigateleft          { &:after  { @include ss-icon; content:'◅';}}
+@mixin ss-left-navigateleft           { &:before { @include ss-icon; content:'◅';}}
+
+@mixin ss-right-up                    { &:after  { @include ss-icon; content:'⬆';}}
+@mixin ss-left-up                     { &:before { @include ss-icon; content:'⬆';}}
+
+@mixin ss-right-upright               { &:after  { @include ss-icon; content:'⬈';}}
+@mixin ss-left-upright                { &:before { @include ss-icon; content:'⬈';}}
+
+@mixin ss-right-right                 { &:after  { @include ss-icon; content:'➡';}}
+@mixin ss-left-right                  { &:before { @include ss-icon; content:'➡';}}
+
+@mixin ss-right-downright             { &:after  { @include ss-icon; content:'⬊';}}
+@mixin ss-left-downright              { &:before { @include ss-icon; content:'⬊';}}
+
+@mixin ss-right-down                  { &:after  { @include ss-icon; content:'⬇';}}
+@mixin ss-left-down                   { &:before { @include ss-icon; content:'⬇';}}
+
+@mixin ss-right-downleft              { &:after  { @include ss-icon; content:'⬋';}}
+@mixin ss-left-downleft               { &:before { @include ss-icon; content:'⬋';}}
+
+@mixin ss-right-left                  { &:after  { @include ss-icon; content:'⬅';}}
+@mixin ss-left-left                   { &:before { @include ss-icon; content:'⬅';}}
+
+@mixin ss-right-upleft                { &:after  { @include ss-icon; content:'⬉';}}
+@mixin ss-left-upleft                 { &:before { @include ss-icon; content:'⬉';}}
+
+@mixin ss-right-directup              { &:after  { @include ss-icon; content:'▴';}}
+@mixin ss-left-directup               { &:before { @include ss-icon; content:'▴';}}
+
+@mixin ss-right-directright           { &:after  { @include ss-icon; content:'▹';}}
+@mixin ss-left-directright            { &:before { @include ss-icon; content:'▹';}}
+
+@mixin ss-right-dropdown              { &:after  { @include ss-icon; content:'▾';}}
+@mixin ss-left-dropdown               { &:before { @include ss-icon; content:'▾';}}
+
+@mixin ss-right-directleft            { &:after  { @include ss-icon; content:'◃';}}
+@mixin ss-left-directleft             { &:before { @include ss-icon; content:'◃';}}
+
+@mixin ss-right-retweet               { &:after  { @include ss-icon; content:'';}}
+@mixin ss-left-retweet                { &:before { @include ss-icon; content:'';}}
