@@ -22,14 +22,17 @@ body {
 }
 
 h1 {
+	padding: 0 0 2px 30px;
+	border-bottom: 2px solid;
+	margin-bottom:8px;
+
 	font-family: $heading-font-family;
 	font-weight:bold;
-	font-size:14px;
-	margin-bottom:8px;
+	font-size: 25px;
+	letter-spacing: 4px;
 }
 
 h2 {
-	font-family: $heading-font-family;
 	font-size:19px;
 }
 
@@ -95,10 +98,10 @@ h3, h4, h5 {
 	padding-left:10px;
 }
 
-#aboutInfo {
+#aboutInfo, #contactInfo {
 	width:697px;
 	text-align:left;
-	padding:15px;
+	padding: 30px 15px 15px;
 	background:url(/images/blackBack.png) repeat;
 	position:absolute;
 	top:0;
@@ -106,7 +109,7 @@ h3, h4, h5 {
 	margin-left:-355px;
 }
 
-#aboutHead {
+#aboutHead, #contactHead {
 	width:697px;
 	height:102px;
 	background:url(/images/aboutHeader.png) repeat-x;
@@ -121,24 +124,6 @@ h3, h4, h5 {
 .imageleft {
 	float:left;
 	margin:0 15px 8px 0;
-}
-
-#contactInfo {
-	width:697px;
-	text-align:left;
-	padding:15px;
-	background:url(/images/blackBack.png) repeat;
-	position:absolute;
-	top:0;
-	left:50%;
-	margin-left:-355px;
-}
-
-#contactHead {
-	width:697px;
-	height:102px;
-	background:url(/images/contactHeader.png) repeat-x;
-	margin-bottom:8px;
 }
 
 #contactInfo form {
