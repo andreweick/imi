@@ -10,6 +10,8 @@
 // @import "partials";
 // @import "custom/styles";
 
+@import "custom/symbolset";
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -114,6 +116,18 @@ h3, h4, h5 {
 	height:102px;
 	background:url(/images/aboutHeader.png) repeat-x;
 	margin-bottom:-20px;
+}
+
+.return {
+	display: block;
+	font-family: $navigation-font-family;
+	letter-spacing: 3px;
+	font-size: 14px;
+	color: #bbb;
+	text-decoration: none;
+	text-align: right;
+	@include ss-right-navigateup;
+	@include text-shadow(white 0 0 12px);
 }
 
 .imageright {
