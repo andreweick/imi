@@ -2,56 +2,77 @@
 /* CSS Document */
 
 body {
-	background:#000 url(images/IMI_MainWebsite2.jpg) center top no-repeat fixed;	
+	color:#000;
+	background:#FFF;
 	text-align:center;
-	color:#FFF;
-	font-family:Verdana, Geneva, sans-serif;
-	padding:30px 0 0 0;
+	font-family:"Courier New", Courier, monospace;
+	margin:0;
+	padding:0;	
 }
 
-h1 {
-	font-family:Verdana, Geneva, sans-serif;
-	font-weight:bold;
-	font-size:14px;	
-	margin-bottom:8px;
+body.inside {
+	background:#000 url(images/mainLogoBack.jpg) no-repeat center top fixed;
+	text-align:center;
+	font-family:"Courier New", Courier, monospace;
+	margin:0;
+	padding:0;	
 }
 
 h2 {
 	font-size:19px;	
 }
 
-#navigation {
-	display:inline-block;
-	width:720px;
-	margin:165px auto 0 auto;	
-	text-align:left;
-	clear:both;
+#logoBar {
+	height:394px;
+	width:100%;
+	background:url(images/blackLogoBar.jpg) repeat-x;	
+	margin-top:20px;
 }
 
-#about {
-	margin-left:20px;
-	float:left;	
+#navBar {
+	font-weight:bold;
+	font-size: 29px;
 }
 
-#contact {
-	float:right;	
+#navBar a {
+	color:#000;
+	text-decoration:none;
 }
 
-#intro {
-	width:720px;
-	margin:120px auto 0 auto;
-	padding-left:10px;
+#navBar a:hover {
+	text-decoration:underline;
+}
+
+#descriptionBar {
+	width:100%;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	margin:20px 0 25px 0;
+	font-size:14px;
+}
+
+#descriptionBar p {
+	width:495px;	
+	margin:10px auto;
+}
+
+#taglineBar {
+	width:100%;
+	background:#000;	
 }
 
 #aboutInfo {
 	width:697px;	
 	text-align:left;
 	padding:15px;
-	background:url(images/blackBack.png) repeat;
+	background:#FFF;
 	position:absolute;
 	top:0;
 	left:50%;
 	margin-left:-355px;
+	-webkit-box-shadow: 0px 0px 12px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 0px 12px #000; /* FF3.5 - 3.6 */
+    box-shadow: 0px 0px 12px #000;
 }
 
 #aboutHead {
@@ -59,6 +80,22 @@ h2 {
 	height:102px;
 	background:url(images/aboutHeader.png) repeat-x;
 	margin-bottom:-20px;
+}
+
+h1.insideTitle {
+	width:100%;
+	border-bottom:3px solid #000;
+}
+
+a.returnLink {
+	color:#000;	
+	float:right;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a.returnLink:hover {
+	text-decoration:underline;
 }
 
 .imageright {
@@ -75,18 +112,14 @@ h2 {
 	width:697px;	
 	text-align:left;
 	padding:15px;
-	background:url(images/blackBack.png) repeat;
+	background:#FFF;
 	position:absolute;
 	top:0;
 	left:50%;
 	margin-left:-355px;
-}
-
-#contactHead {
-	width:697px;
-	height:102px;
-	background:url(images/contactHeader.png) repeat-x;
-	margin-bottom:8px;
+	-webkit-box-shadow: 0px 0px 12px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 0px 12px #000; /* FF3.5 - 3.6 */
+    box-shadow: 0px 0px 12px #000;
 }
 
 #contactInfo form {
@@ -120,6 +153,6 @@ ul#navList li {
 }
 
 ul#navList li a { 
-	color:#FFF;
+	color:#000;
 	font-size:12px;
 }

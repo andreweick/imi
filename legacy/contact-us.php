@@ -2,19 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Institute of Modern Intelligence - Contact</title>
+<title>Mission Focus</title>
 <link rel="stylesheet" type="text/css" href="mainstyle.css" />
-	<script src="http://mint.imintel.org/?js" type="text/javascript"></script>
-
+<script src="http://www.mint.missionfoc.us/?js" type="text/javascript"></script>
 </head>
 
-<body>
-    
+<body class="inside">
+
     <div id="contactInfo">
-    <div id="contactHead">
-  			<a href="index.php"><img class="imageright" src="images/return.png" width="122" height="36" alt="Return" /></a>
-        </div>
-<p>The Institute for Modern Intelligence – IMI – is embracing the evolution of the intelligence community from the expanding theoretical foundations, to the innovative techniques, to the implications for organization and management. In short, the IMI is dedicated to developing the science, practice, and governance of modern intelligence.<br /><br /></p>
+    <a class="returnLink" href="index.php">RETURN ^</a>
+        <h1 class="insideTitle">CONTACT MISSION FOCUS</h1>
+<p>For more information regarding our services, please fill out the below contact form.<br /><br /></p>
 <?php
 if (isset($_REQUEST['email']))
 //if "email" is filled out, send email
@@ -23,7 +21,7 @@ if (isset($_REQUEST['email']))
   $email = $_REQUEST['email'] ;
   $subject = $_REQUEST['subject'] ;
   $message = $_REQUEST['message'] ;
-  mail("andrew.eick@imintel.org", "[imintel.org] $subject",
+  mail("andrew.eick@missionfoc.us", "[MissionFoc.us]$subject",
   $message, "From:" . $email);
   echo "Thank you for using our mail form";
   }
@@ -41,7 +39,7 @@ else
   }
 ?>
     </div>
-
+    
 <script type="text/javascript">
   var _gauges = _gauges || [];
   (function() {
@@ -49,7 +47,7 @@ else
     t.type  = 'text/javascript';
     t.async = true;
     t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '4f035e7e613f5d504a000001');
+    t.setAttribute('data-site-id', '4f035fc9f5a1f514a1000001');
     t.src = '//secure.gaug.es/track.js';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(t, s);
