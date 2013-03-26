@@ -64,6 +64,7 @@ a {
 body {
   cursor: default;
   background: $page-bg image-url("logo-imintel.jpg") center 20px no-repeat fixed;
+  @include at2x("logo-imintel", ".jpg", 638px, 316px);
 }
 
 #content {
@@ -157,6 +158,25 @@ h1, .page-title {
     background-color: $link-color-hover;
   }
 }
+
+.thumbnail {
+  @include border-radius(5px);
+}
+
+.alert {
+  display: block;
+  margin: 40px 0;
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #333;
+  border-top-color: #444;
+  @include border-radius(5px);
+  text-align: center;
+  strong {
+    color: #777;
+  }
+}
+
 
 
 form {
